@@ -1,3 +1,8 @@
+Snake Project
+👋Hey guys..!
+I am Bollineni Bharath
+This project is mainly using Python and OpenCV.
+
 📌 Face Recognition Attendance System
 
 📝 Overview
@@ -11,7 +16,6 @@ This is an AI-powered Face Recognition Attendance System that uses InsightFace f
 🏗️ How It Works
 
 1️⃣ Train the Model: Generate face embeddings and store them in face_embeddings.pkl 🧠2️⃣ Run Face Recognition: Capture video, detect faces, and compare with stored embeddings 🖼️3️⃣ Attendance Logging: Update 49/static/Attendance.xlsx based on recognition time 📝4️⃣ Determine Status: Present if detected for ≥35 minutes, otherwise Absent ❌✅
-
 
 🚀 Installation & Setup
 
