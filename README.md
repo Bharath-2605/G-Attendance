@@ -1,70 +1,82 @@
-Snake Project
-👋Hey guys..!
+Face Recognition Attendance System 📸🎓
+👋 Hey guys..!
 I am Bollineni Bharath
-This project is mainly using Python and OpenCV.
 
-📌 Face Recognition Attendance System
+This project is built using Python 🐍, OpenCV 🎥, and InsightFace for face recognition-based attendance marking.
 
-📝 Overview
+📌 Features
+✔ Live Face Recognition using InsightFace AI.
+✔ Automatic Attendance Marking in an Excel sheet.
+✔ First & Last Recognition Time Tracking ⏳.
+✔ Time-based Presence Status (Present/Absent) 🏫.
+✔ Excel-based Record Keeping 📊.
 
-This is an AI-powered Face Recognition Attendance System that uses InsightFace for detecting and recognizing faces in real-time. It automatically logs attendance in an Excel sheet (Attendance.xlsx) based on facial recognition.
+📂 Folder Structure
+php
+Copy
+Edit
+📁 FaceRecognition-Attendance  
+ ┣ 📂 static  
+ ┃ ┗ 📄 Attendance.xlsx   # Attendance records  
+ ┣ 📂 scripts  
+ ┃ ┣ 📄 train_model.py    # Training the face recognition model  
+ ┃ ┗ 📄 recognize.py      # Live recognition & attendance marking  
+ ┣ 📄 requirements.txt    # Required dependencies  
+ ┗ 📄 README.md           # Project documentation  
+⚙️ Setup & Installation
+Step 1: Clone the Repository
+bash
+Copy
+Edit
+git clone https://github.com/Bharath-2605/FaceRecognition-Attendance.git
+cd FaceRecognition-Attendance
+Step 2: Install Dependencies
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Step 3: Train the Model 🏋️
+Run the following command to train the model and generate face embeddings:
 
-⚡ Features
-
-✅ Real-time Face Detection & Recognition using InsightFace 🏆✅ Face Embeddings Storage for matching known faces 🔐✅ Automatic Attendance Marking based on recognition duration 🕒✅ Excel Integration for attendance tracking 📊✅ Works with a Webcam 🎥
-
-🏗️ How It Works
-
-1️⃣ Train the Model: Generate face embeddings and store them in face_embeddings.pkl 🧠2️⃣ Run Face Recognition: Capture video, detect faces, and compare with stored embeddings 🖼️3️⃣ Attendance Logging: Update 49/static/Attendance.xlsx based on recognition time 📝4️⃣ Determine Status: Present if detected for ≥35 minutes, otherwise Absent ❌✅
-
-🚀 Installation & Setup
-
-1️⃣ Install Dependencies
-
-pip install opencv-python numpy pandas insightface onnxruntime albumentations openpyxl
-
-2️⃣ Train the Model (Register Faces)
-
-Run the following script to generate face embeddings for known individuals:
-
+bash
+Copy
+Edit
 python scripts/train_model.py
-
-This will create face_embeddings.pkl file, which stores facial features.
-
-3️⃣ Start Face Recognition
-
-Ensure your webcam is connected, then run:
-
+Step 4: Run Face Recognition 🎥
+bash
+Copy
+Edit
 python scripts/recognize.py
+📝 How It Works?
+✅ Open the webcam and detect faces in real-time.
+✅ Compare detected faces with trained embeddings.
+✅ If matched, mark attendance in static/Attendance.xlsx 📄.
+✅ Track First & Last Recognition Time ⏳.
+✅ Present if duration ≥ 35 minutes, else Absent.
 
-Press 'E' to stop recognition and save attendance.
+🎮 Controls
+🔄 Press "R" - Restart recognition session.
+❌ Press "E" - Exit recognition & save attendance.
 
-🛠️ Troubleshooting
+🐞 Troubleshooting
+🔹 Error: Attendance.xlsx file not found!
+📌 Ensure static/Attendance.xlsx exists before running recognize.py.
 
-❌ Error: `` not found!🔹 Run train_model.py to generate embeddings.
+🔹 Error: Trained face embeddings not found!
+📌 Run train_model.py first to generate face_embeddings.pkl.
 
-❌ Error: `` not found!🔹 Ensure 49/static/Attendance.xlsx exists. If not, create an empty Excel sheet with columns:
+🔹 Webcam Not Opening?
+📌 Check if another application is using the camera.
 
-Registration No.
+📢 Contributing
+Contributions are welcome! 🤝
 
-Name
+Fork the repo.
+Create a new branch (git checkout -b feature-branch).
+Commit changes (git commit -m "Add new feature").
+Push (git push origin feature-branch).
+Create a Pull Request.
+📜 License
+📝 This project is licensed under the MIT License.
 
-Date
-
-First Recognition
-
-Last Recognition
-
-Duration
-
-Status
-
-❌ Recognition is not accurate🔹 Try lowering the threshold (min_distance < 1.2) in recognize.py.
-
-🎯 Future Enhancements
-
-✨ Add support for multiple cameras 🎥✨ Improve recognition accuracy with better embeddings storage 📈✨ Build a web interface for easy attendance monitoring 🌍
-
-📞 Contact
-
-💡 Need help or want to contribute? Reach out via GitHub! 😊
+Happy Coding! 🚀
