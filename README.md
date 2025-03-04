@@ -1,7 +1,6 @@
 📌 G-Attendance
 
 
-
 👋 Hey Guys!
 
 I am Bollineni Bharath. This project is mainly built using Python and OpenCV for Face Recognition-based Attendance System.
