@@ -35,11 +35,11 @@ G-Attendance is an advanced **face recognition-based attendance system** that ut
 ```
 G-Attendance/
 │-- static/
-│   ├── Attendance.xlsx  # Attendance Record File
+│   ├── Attendance.xlsx  
 │-- scripts/
-│   ├── train_model.py   # Train Face Recognition Model
-│   ├── recognize.py     # Recognize & Mark Attendance
-│-- README.md            # Project Documentation
+│   ├── train_model.py   
+│   ├── recognize.py     
+│-- README.md            
 ```
 
 ---
