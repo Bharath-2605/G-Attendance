@@ -1,57 +1,109 @@
 📌 G-Attendance
 
-👋 Hey everyone!
-I'm Bollineni Bharath, and this project is designed to provide an automated face recognition-based attendance system using Python 🐍, OpenCV 🎥, and InsightFace.
+
+
+👋 Hey Guys!
+
+I am Bollineni Bharath. This project is mainly built using Python and OpenCV for Face Recognition-based Attendance System.
+
+
 
 🚀 Project Overview
 
-G-Attendance is a face recognition-based attendance system that captures and records attendance using a webcam. This project helps in automating attendance marking with real-time face detection.
-
-🔹 Features
-✔️ Real-time face recognition using InsightFace 🤖✔️ Automatic attendance marking in an Excel file 📂✔️ Stores first and last recognition timestamps ⏳✔️ Marks attendance as "Present" or "Absent" based on recognition duration ✅❌✔️ Works with live webcam feed 📸
+G-Attendance is an automated face recognition attendance system that uses computer vision to detect and mark attendance in an Excel sheet. It ensures accurate and efficient tracking of student or employee attendance.
 
 
-🛠️ Installation & Setup
-📌 Prerequisites
-Ensure you have Python 3.8+ installed along with the required dependencies.
 
-📥 Clone the Repository
-  $ git clone https://github.com/Bharath-2605/G-Attendance.git
-$ cd G-Attendance
-  
-📦 Install Dependencies
-  $ pip install -r requirements.txt
-  
-🔧 Usage
-🎬 Running the Application
+🛠️ Features
 
-1️⃣ Train the model by running:
-$ python train_model.py
+📸 Live Face Recognition using OpenCV and InsightFace
 
-2️⃣ Start the face recognition process:
-$ python recognize.py
+📂 Stores Attendance Data in an Excel file
 
-🎮 Controls
-🟢 Press 'E' to exit and save attendance.🔄 Press 'R' to restart recognition.
+🔍 Automatically Marks Present/Absent based on recognition duration
 
-📊 Attendance Data
-Attendance is stored in 49/static/Attendance.xlsx 📑
-Updates include Date, First Recognition, Last Recognition, Duration, and Status (Present/Absent) 📌
+✅ Easy to Use with a simple interface
 
-🖥️ Tech Stack
-🔹 Python 🐍
-🔹 OpenCV 🎥
-🔹 InsightFace 🤖
-🔹 Pandas 📊
-🔹 NumPy 🔢
+🖥️ Real-Time Detection via webcam
 
-💡 Future Enhancements
-🚀 Improve accuracy with advanced models📈 Implement a web-based UI for attendance tracking📂 Store attendance records in a database instead of an Excel file
+
+
+📦 Installation
+
+Clone the Repository
+
+git clone https://github.com/Bharath-2605/G-Attendance.git
+
+Navigate to the Project Directory
+
+cd G-Attendance
+
+Install Required Dependencies
+
+pip install -r requirements.txt
+
+
+
+🔧 How to Use
+
+Train the Model (if not trained already):
+python train_model.py
+
+Run Face Recognition for Attendance:
+python recognize.py
+
+Press 'E' to stop recognition and save attendance.
+
+
+
+📂 File Structure
+
+train_model.py → Train the model and store face embeddings.
+
+recognize.py → Runs real-time face recognition.
+
+face_embeddings.pkl → Stores the trained face embeddings.
+
+49/static/Attendance.xlsx → Stores the attendance records.
+
+requirements.txt → Dependencies required to run the project.
+
+
+
+⚠️ Troubleshooting
+
+Error: Attendance.xlsx file not found!
+
+Ensure that 49/static/Attendance.xlsx exists before running recognize.py.
+
+Error: Face embeddings not found!
+
+Run train_model.py before recognize.py.
+
+
+
+📝 To-Do List
+
+✅ Improve face recognition accuracy
+
+🚀 Optimize the system for large datasets
+
+🎨 Add a GUI for better usability
+
+
+
+🏆 Contribution
+
+Feel free to contribute to this project by raising issues or submitting pull requests! 😊
+
+
 
 📜 License
-This project is open-source and available under the MIT License.
 
-🙌 Contributions
-Feel free to fork this repo, raise issues, and submit pull requests to improve this project!
-📧 Contact: Bharath-2605
-🔗 GitHub Repository: G-Attendance
+This project is licensed under the MIT License.
+
+
+
+📩 Contact
+
+For any queries, reach out to me on GitHub.
